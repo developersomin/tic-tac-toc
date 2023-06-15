@@ -1,6 +1,7 @@
 let editedPlayer = 0;
 let activePlayer = 0;
 let currentRound = 1;
+let gameOver=false;
 const players = [
   { name: "", symbol: "X" },
   { name: "", symbol: "O" },
@@ -23,6 +24,7 @@ const cancelConfigBtnElement = document.getElementById("cancel-config-button");
 const gameAreaElement = document.getElementById("active-game");
 const startNewGameBtnElement = document.getElementById("start-game-btn");
 const activePlayerNameElement = document.getElementById("active-player-name");
+const gameOverElement = document.getElementById("game-over");
 
 //const gameFieldElements = document.querySelectorAll("#game-board li");
 const gameBoardElement = document.getElementById("game-board");
